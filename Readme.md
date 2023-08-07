@@ -31,7 +31,10 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
-
+5. Load fixture data:
+```
+python manage.py loaddata fixture_data.json
+```
 # Getting access
 
 ------------------------------------

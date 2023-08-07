@@ -1,0 +1,75 @@
+[
+  {
+    "model": "post.hashtag",
+    "pk": 1,
+    "fields": {
+      "name": "testhashtag1"
+    }
+  },
+  {
+    "model": "post.hashtag",
+    "pk": 2,
+    "fields": {
+      "name": "testhashtag2"
+    }
+  },
+  {
+    "model": "post.post",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "title": "Test Post",
+      "text": "This is a test post.",
+      "post_picture": null,
+      "hashtags": [1, 2],
+      "created_at": "2023-07-19T12:00:00"
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+      "email": "user1@example.com",
+      "is_staff": true,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 2,
+    "fields": {
+      "email": "user2@example.com",
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 3,
+    "fields": {
+      "email": "user3@example.com",
+      "is_staff": false,
+      "is_superuser": true
+    }
+  },
+  {
+    "model": "user.userprofile",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "username": "user1",
+      "profile_picture": null,
+      "bio": "This is user 1's bio."
+    }
+  },
+  {
+    "model": "user.userprofile",
+    "pk": 2,
+    "fields": {
+      "owner": 2,
+      "username": "user2",
+      "profile_picture": null,
+      "bio": "This is user 2's bio."
+    }
+  }
+]
